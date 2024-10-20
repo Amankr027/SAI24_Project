@@ -698,3 +698,76 @@ strong {
     grid-row: 1;
   }
 }
+
+
+
+/* new */
+
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 7rem; /* Add margin to prevent overlapping with the navbar */
+}
+
+/* Map Section */
+.map-section {
+  margin-bottom: 3rem;
+  margin-top: 2rem; /* Add spacing above the map */
+}
+
+/* Hospital List Section */
+.hospital-list {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.hospital-list-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #4caf50, #81c784); /* Gradient effect */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.hospital-list-items {
+  list-style: none;
+  padding: 0;
+}
+
+.hospital-list-item {
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+}
+
+.hospital-list-item strong {
+  font-size: 1.8rem;
+  color: #00796b; /* Darker teal for emphasis */
+}
+
+.hospital-list-item:hover {
+  background-color: #e0f7fa; /* Light highlight on hover */
+  transform: translateY(-3px); /* Slight hover lift effect */
+}
+
+.no-hospitals {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #777;
+}

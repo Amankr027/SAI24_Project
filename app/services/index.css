@@ -97,3 +97,35 @@
   button svg {
     margin-right: 5px;
   } */
+
+
+  .test-selection {
+    text-align: center;
+    padding: 10rem;
+  }
+  
+  .test-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+  }
+  
+  .test-btn {
+    background-color: #00b3b3;
+    color: white;
+    padding: 2rem 5rem;
+    border-radius: 25px;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .test-btn:hover {
+    background-color: #008080;
+  }
+  
+
+
+  

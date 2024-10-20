@@ -1,8 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import Menu from "@/public/assets/icons/menu/menu.svg";
@@ -31,7 +29,7 @@ const Header = () => {
 
   return (
     <header
-      className={`header  ${
+      className={`header ${
         shadow ? "shadow-lg bg-primaryLighter" : "shadow-0 bg-primaryLighter/80"
       }`}
     >
@@ -40,7 +38,6 @@ const Header = () => {
           href="/"
           className="capitalize font-semibold text-[22px] lg:text-[24px] text-black duration-300 hover:scale-110"
         >
-          {/* <Image src={""} width={12} height={12} className="object-contain" /> */}
           Cognitive Wellness
         </Link>
 
@@ -50,7 +47,7 @@ const Header = () => {
             <ul className="nav-list">
               <li>
                 <Link
-                  href={"/"}
+                  href="/"
                   onClick={() => setOpen(false)}
                   className="nav-link text-[1.8rem] font-semibold duration-300 hover:text-primaryDark"
                 >
@@ -59,7 +56,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href={"/services"}
+                  href="/services"
                   onClick={() => setOpen(false)}
                   className="nav-link text-[1.8rem] font-semibold duration-300 hover:text-primaryDark"
                 >
@@ -68,7 +65,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href={"/about-us"}
+                  href="/about-us"
                   onClick={() => setOpen(false)}
                   className="nav-link text-[1.8rem] font-semibold duration-300 hover:text-primaryDark"
                 >
@@ -77,18 +74,28 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href={"/contact-us"}
+                  href="/contact-us"
                   onClick={() => setOpen(false)}
                   className="nav-link text-[1.8rem] font-semibold duration-300 hover:text-primaryDark"
                 >
                   NearBy
                 </Link>
               </li>
+              {/* New Resources link */}
+              <li>
+                <Link
+                  href="/resources"
+                  onClick={() => setOpen(false)}
+                  className="nav-link text-[1.8rem] font-semibold duration-300 hover:text-primaryDark"
+                >
+                  Resources
+                </Link>
+              </li>
 
               <li className="mt-4">
                 <Link
                   className="main-nav-link nav-cta duration-300 bg-primary hover:bg-primaryDark"
-                  href={"/sign-up"}
+                  href="/sign-up"
                   onClick={() => setOpen(false)}
                 >
                   Get Started
@@ -117,7 +124,7 @@ const Header = () => {
           <ul className="nav-list md:flex-row">
             <li>
               <Link
-                href={"/"}
+                href="/"
                 className={`text-[1.8rem] font-semibold duration-300 hover:text-primaryDark ${
                   pathname === "/" ? "text-primaryDark" : ""
                 }`}
@@ -127,7 +134,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href={"/services"}
+                href="/services"
                 className={`text-[1.8rem] font-semibold duration-300 hover:text-primaryDark ${
                   pathname === "/services" ? "text-primaryDark" : ""
                 }`}
@@ -138,7 +145,7 @@ const Header = () => {
 
             <li>
               <Link
-                href={"/about-us"}
+                href="/about-us"
                 className={`text-[1.8rem] font-semibold duration-300 hover:text-primaryDark ${
                   pathname === "/about-us" ? "text-primaryDark" : ""
                 }`}
@@ -148,7 +155,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href={"/contact-us"}
+                href="/contact-us"
                 className={`text-[1.8rem] font-semibold duration-300 hover:text-primaryDark ${
                   pathname === "/contact-us" ? "text-primaryDark" : ""
                 }`}
@@ -156,11 +163,22 @@ const Header = () => {
                 NearBy
               </Link>
             </li>
+            {/* New Resources link */}
+            <li>
+              <Link
+                href="/resources"
+                className={`text-[1.8rem] font-semibold duration-300 hover:text-primaryDark ${
+                  pathname === "/resources" ? "text-primaryDark" : ""
+                }`}
+              >
+                Resources
+              </Link>
+            </li>
 
             <li className="mt-4 md:mt-0">
               <Link
                 className="main-nav-link nav-cta duration-300 bg-primary hover:bg-primaryDark"
-                href={"/sign-up"}
+                href="/sign-up"
               >
                 Get Started
               </Link>
